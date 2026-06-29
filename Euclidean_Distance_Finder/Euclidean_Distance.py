@@ -9,4 +9,14 @@ def get_input(point):
         except: ValueError
         print("Invalid Values. Please enter valid numeric values")
 
+# Display Coordinates provided by the user.
+# Prompt User to confirm Value by Y|N
+def display_inputs(point_a, point_b):
+    print(f"You entered {point_a} as one coordinate and {point_b} as another coordinate.")
+    _ = input("Confirm Your answer by typing Y or N: ")
+    if _.lower == str("y"):
+        return True
+    else:
+        get_input()
+
 
