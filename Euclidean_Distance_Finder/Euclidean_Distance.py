@@ -15,7 +15,11 @@ a, b = main()
 def value_printer(a, b):
     print(f"first point coordinates are: ",{a})
     print(f"second point coordinates are: ",{b})
-value_printer()
+value_printer(a, b)
+
+def Euclidean_Distance_operator(a, b):
+    print(f"The distance between these two points is: ", ({b[0]-a[0]}) + ({b[1]-a[1]}), "units, as calculated from second point to first point.")
+Euclidean_Distance_operator(a, b)
 
 
 main()
